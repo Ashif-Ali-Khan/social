@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 1px;
+}
+
+body {
+    background-color: aqua;
+}
+
+.navbar {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    padding: 1em;
+    margin: 0;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+    font-size: 1em
+}
+
+.navbar a.active {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.navbar a:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.fa {
+    font-size: 1.2em;
+}
+
+.user-icon {
+    border-radius: 100%;
+    width: 2em;
+    margin-left: auto;
+}
+
+.notifications .badge {
+    position: relative;
+    top: -10px;
+    right: 9px;
+    padding: 3px 10px;
+    border-radius: 50%;
+    text-align: center;
+    height: 12px;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: red;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+.profile-pic {
+    border-radius: 100%;
+    width: 150px;
+    float: center;
+    margin: 20px 0;
+    padding: 0px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "a b c d" "e f g h" "i j k l" "m n o p";
+    grid-gap: 10px;
+    /*    centre images vertical*/
+    align-items: center;
+    text-align: center;
+}
+
+.a {
+    grid-area: a/a/a/a;
+    background-color: aliceblue;
+}
+
+.b {
+    grid-area: a/b/b/c;
+}
+
+.d {
+    grid-area: e/f/f/c;
+    background-color: bisque;
+}
+
+.h {
+    grid-area: i/j/j/k;
+}
+
+.j {
+    grid-area: m/n/n/k;
+}
+
+.k {
+    grid-area: p/p/p/p;
+    background-color: chartreuse;
+}
+
+.status {
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.post-theme {
+    color: white;
+    background-color: grey;
+}
+
+.post-button {
+    display: inline-block;
+    padding: 8px 18px;
+    float: none;
+    overflow: hidden;
+    text-decoration: none;
+}

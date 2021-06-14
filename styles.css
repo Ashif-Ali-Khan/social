@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: aqua;
+    background-color: #ffe6e6;
 }
 
 .navbar {
@@ -36,6 +36,12 @@ body {
     color: black;
 }
 
+.dropdown button:hover {
+    background-color: aqua;
+    color: black;
+    padding: 1em;
+}
+
 .fa {
     font-size: 1.2em;
 }
@@ -46,11 +52,11 @@ body {
     margin-left: auto;
 }
 
-.notifications .badge {
+.badge {
     position: relative;
     top: -10px;
-    right: 9px;
-    padding: 3px 10px;
+    right: 25px;
+    padding: 0px 10px;
     border-radius: 50%;
     text-align: center;
     height: 12px;
@@ -58,6 +64,13 @@ body {
     font-weight: bolder;
     background-color: red;
     color: white;
+}
+
+.fa-bell {
+    color: white;
+    background-color: black;
+    border: 0px;
+    margin: 0px;
 }
 
 .dropdown {
@@ -68,8 +81,8 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: #f1f1f1;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -77,32 +90,41 @@ body {
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
-    text-decoration: none;
+    text-decoration: solid;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1
+    background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
+
+/* .dropdown:hover .dropbtn {
     background-color: #3e8e41;
-}
+} */
 
 h5 {
     font-size: 24px;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .profile-pic {
-    border-radius: 100%;
-    width: 150px;
-    float: center;
-    margin: 20px 0;
+    border-radius: 120%;
+    width: 111px;
+    margin: 20px 0px 10px 104px;
     padding: 0px;
+}
+
+.details {
+    margin-top: 12px;
+    margin-left: 30px;
+    font-size: 15px;
+    line-height: 2;
 }
 
 main {
@@ -113,32 +135,54 @@ main {
     grid-gap: 10px;
     /*    centre images vertical*/
     align-items: center;
-    text-align: center;
 }
 
-.a {
+.a1 {
     grid-area: a/a/a/a;
     background-color: aliceblue;
+    margin: 27px 52px -12px 11px;
+    height: 23em;
+    width: 20em;
 }
 
-.b {
+.b2 {
     grid-area: a/b/b/c;
+    background-color: aliceblue;
+    margin: -132px -56px 36px -53px;
+    height: 10em;
 }
 
-.d {
+.c3 {
+    background-color: white;
+    height: 21em;
+    width: 16em;
+    text-align: center;
+    margin: 14px 0px 8px 49px;
+    padding: oem 1em;
+    line-height: 2em
+}
+
+.c3image {
+    vertical-align: middle;
+    width: 13em;
+    height: 9em;
+    margin: 12px 0px 20px 0px;
+}
+
+.d4 {
     grid-area: e/f/f/c;
     background-color: bisque;
 }
 
-.h {
+.h8 {
     grid-area: i/j/j/k;
 }
 
-.j {
+.j10 {
     grid-area: m/n/n/k;
 }
 
-.k {
+.k11 {
     grid-area: p/p/p/p;
     background-color: chartreuse;
 }
@@ -146,7 +190,7 @@ main {
 .status {
     border: 1px solid;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 46px 76px 15px 16px;
     text-align: left;
 }
 
@@ -161,4 +205,5 @@ main {
     float: none;
     overflow: hidden;
     text-decoration: none;
+    margin-left: 16px;
 }

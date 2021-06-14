@@ -1,3 +1,18 @@
+ <div class="dropdown">
+        </a>
+        <a class="notifications" href="#">
+            <button class="dropbtn"><i class="fa fa-bell"></i></button>
+
+
+            <div class="drop-down-content">
+                <p>One new friend request</p>
+                <p>Saqueeb posted on wall</p>
+                <p>saqueeb likes your post</p>
+            </div>
+            </div>
+
+
+
 <a class="notifications" href="notifications" title=Notifications>
 
 

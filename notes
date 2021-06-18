@@ -1,3 +1,24 @@
+repeat(4, 1fr)
+delete extra br near row padding
+
+
+ .navbar a.active {
+        background-color: whitesmoke;
+        color: black;
+    }
+    
+    .navbar a:hover {
+        background-color: aqua;
+        color: black;
+    }<div class="lightspic"><img src="./gallery/lights.jpg" alt="lights image">
+            </div>
+            <div class="naturepic">
+            
+
+            </div>
+
+
+
  <div class="dropdown">
         </a>
         <a class="notifications" href="#">
